@@ -30,7 +30,7 @@ test('gets inventory from player or returns false', () => {
 
     expect(player.getInventory()).toEqual(expect.any(Array));
 
-    player.inventory =[];
+    player.inventory = [];
 
     expect(player.getInventory()).toEqual(false);
 });
@@ -53,7 +53,7 @@ test('subtracts from players health', () => {
     const oldHealth = player.health;
 
     player.reduceHealth(5);
-    expect(player.health).toBe(oldHealth -5);
+    expect(player.health).toBe(oldHealth - 5);
     player.reduceHealth(99999);
     expect(player.health).toBe(0);
 });
